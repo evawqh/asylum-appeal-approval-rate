@@ -7,10 +7,6 @@ It advance searches for cases containing the word 'asylum' AND categorized under
 
 After the search results are narrowed down, I used [Playwright](https://github.com/RayzaOliveira/web-scraping-with-playwright) (a web scraping tool similar to Selenium) to click into each case, go into different pages, etc. 
 
-![Alt text](../../../../Desktop/Screenshot%202023-01-13%20at%202.41.32%20PM.png)
-
-Within each case, I use BeautifulSoup (which turned out to more reliably get content but unfortunately cannot interact with the site itself) to scrape for the case title, core terms, and the judge's written opinion.
-
-![Alt text](../../../../Desktop/Screenshot%202023-01-13%20at%202.47.17%20PM.png)
+Within each case, I use [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/) (which turned out to more reliably get content but unfortunately cannot interact with the site itself) to scrape for the case title, core terms, and the judge's written opinion.
 
 While the case title and core terms are directly put into the database, opinions are usually pages long. I therefore decided to use Regular Expression (Regex) to find out whether the particular case is denied or granted and the asylum seeker(s)' nationality, which are then also added into the database.
