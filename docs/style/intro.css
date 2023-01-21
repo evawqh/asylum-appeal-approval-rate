@@ -1,0 +1,66 @@
+.background {
+    background-color: rgba(216, 222, 203, 0.581);
+}
+
+#splash {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 900px;
+  }
+  #splash-hero {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-66.4%);
+    font-size: 1.3em;
+    font-family: "MrsEavesRoman", Georgia, "Times New Roman", Times, serif;
+  }
+  #splash-hero .text-block {
+    padding-left: 20px;
+    height: 62px;
+    white-space: nowrap;
+  }
+  #splash-hero .text-block:nth-child(1) {
+    width: 250px;
+    line-height: 60px;
+    padding-left: 22px;
+    transform: translate(-3px);
+  }
+  #splash-hero .text-block:nth-child(2) {
+    width: 230px;
+    transform: translateX(40px);
+    line-height: 60px;
+  }
+
+  #splash-text {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    font-size: 1em;
+    line-height: 30px;
+    bottom: 100px;
+  }
+  .text-block {
+    padding: 2px 2px;
+    background-color: rgba(255,255,255,0.9);
+    margin-bottom: 3px;
+  }
+  .text-block .small-caps {
+    font-variant: small-caps;
+    font-size: 0.9em;
+  }
+  .text-block .sidebar-link {
+    font-style: italic;
+  }
+  #splash-text .text-block {
+    height: 28px;
+    line-height: 29pt;
+  }
+  #splash-text .text-block:nth-child(1) {
+    width: 380px;
+  }
+  #splash-text .text-block:nth-child(2) {
+    width: 330px;
+  }
+  /* end splash
